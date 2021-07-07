@@ -110,16 +110,19 @@
  #+END_SRC
 ** Most basic of changes
 #+BEGIN_SRC emacs-lisp
-(tool-bar-mode -1)
-;; I leave the menubar and disable the scrollbar
-(menu-bar-mode 1)
-(scroll-bar-mode 0)
-(setq inhibit-startup-message t)
-;; Turns off the bell
-(setq ring-bell-function 'ignore)
-(show-paren-mode 1)
-;; This extends how much is stored in the kill ring
-(setq kill-ring-max 100)
+  (tool-bar-mode -1)
+  ;; I leave the menubar and disable the scrollbar
+  (menu-bar-mode 1)
+  (scroll-bar-mode 0)
+  (setq inhibit-startup-message t)
+  ;; Turns off the bell
+  (setq ring-bell-function 'ignore)
+  (show-paren-mode 1)
+  ;; This extends how much is stored in the kill ring
+  (setq kill-ring-max 100)
+  ;; This makes emacs remember where my cursor is when I re-open a file
+  (save-place-mode 1)
+
 #+END_SRC
 ** show lines and columns on modeline
 #+BEGIN_SRC emacs-lisp
@@ -460,7 +463,7 @@
   (use-package magit
     :ensure t
     )
-(global-set-key (kbd "C-c g") 'magit-status)
+  (global-set-key (kbd "C-c g") 'magit-status)
 #+END_SRC
 * window splitting function
 #+BEGIN_SRC emacs-lisp
