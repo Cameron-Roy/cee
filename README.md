@@ -164,4 +164,78 @@ This essentially improves the built in emacs help commands and I quite like it, 
 
 ## swiper
 
-This makes searching way better, it opens up a minibuffer with all the different places you can hop too
+This makes searching way better, it opens up a minibuffer with all the different places you can hop too. I have replaced the default search command `C-s` with this
+
+## mark-multiple
+
+I forget what this does aswell, `C-c q` to activate whatever it is
+
+## switch-window
+
+This is cool, I usually have at max 3 windows in Emacs open at a time, but spamming `C-x o` is a massive pita, so this way you can switch between windows by pressing a key on the homerow when you have more than 2 windows open that corresponds to the window. It's much simpler than my explanation in practice
+
+## Auto Completion
+
+I'm not a big IDE guy, I really dislike the bloat and lack of my nice Emacs keybinds. Sometimes though, I like auto completion. I actually fell in love with auto-completion when I was writing essays in google docs, the dumb autocompletion they implemented really sped up writing essays, so why not add that to my code?
+
+### company
+
+This is the main leader of auto completion, everything else kinda piggybacks off of this. Its ok. Right now I have C, CPP and Arduino auto completion working but I want to add more
+
+### company-irony
+
+company plugin that adds support to Irony, which is the CPP and C backend for auto complete that uses CLANG
+
+### irony
+
+Irony, see above.
+
+### company-arduino
+
+Supposedly auto-completes some arduino functions and the like with company. This is nice as I love the arduino platform
+
+### Company jedi
+
+I do not understand python VENV and that is integral to getting this bloody thing to work
+
+### anaconda-mode
+
+This is in the hopes that I one day get python auto complete to work, one day...
+
+### company-anaconda
+
+adds anaconda support to company
+
+## MAGIT
+
+Supposedly the "killer app" for Emacs. It's very good, but you require a strong working knowledge of GIT to get the most out of it. I, do not have that, so it's a bit complicated for me
+
+## Window splitting functions
+
+`C-x 2` to split the current window horizontally, and `C-x 3` to split it vertically. It creates a new window with the currently open buffer.
+
+## convenient functions
+
+#### kill-whole-word
+`C-c w w` kills the, whole word that you are in
+
+#### copy-whole-line
+`C-c w l` copies the entire line into the ring
+
+#### indent block of text
+`C->` indents selected text by one tabspace. Great for python when you mess up
+
+## config edit/reload
+
+#### edit
+`C-c e` opens up the config file
+
+#### reload
+`C-c r` reloads the config file
+
+## macros
+
+I have no macros so far.
+
+
+
